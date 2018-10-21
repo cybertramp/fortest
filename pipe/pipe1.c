@@ -1,10 +1,14 @@
+/*
+	PIPE 기본
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<errno.h>
 #include<unistd.h>
 
 int main(void){
-	int pfd[2];
+	int pfd[2];		// pfd[0] --> pfd[1]
 	char buf[30];
 
 	/* create pipe */

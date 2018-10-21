@@ -9,6 +9,7 @@
 fork-----pfd[1]----->wait(null)		 // 부모
 ㄴ-------pfd[0]-->			// 자식
 */
+
 int main(void){
 	int pfd[2];
 	char buf[30];
@@ -31,7 +32,7 @@ int main(void){
 		printf("PARENT(PID: %d): Reading from the pipe\n",getpid());
 
 		read(pfd[0],buf,5);	// pfd[0] 값을 받아 buf에 저장
-		printf("PARENT(PID : %d): %s\n",getuid(),buf);
+		printf("PARENT(PID : %d): %s\n",getpid(),buf);
 
 		wait(NULL);	// 기다림
 	}

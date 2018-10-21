@@ -5,9 +5,7 @@
 main() 
 { 
 	struct sigaction act;
-
-	/* 시그널이 오면 무시 
-		SIG_IGN : 무시하겠다. */
+	/* 해당 신호에 대한 다음 작업 없음 */
 	act.sa_handler = SIG_IGN;
 
 	/* act.sa_mask : 시그널 처리하는 동안 블록 시킬 시그널 
