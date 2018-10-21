@@ -1,5 +1,5 @@
-# fortest
-this rep for test
+# Just for Linux Programming
+오픈 리눅스 프로그래밍 시험용 레포지토리
 
 ```
 # git사용시 참고
