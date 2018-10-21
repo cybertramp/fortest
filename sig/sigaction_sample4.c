@@ -30,7 +30,7 @@ main()
 		sleep(1);
 		if (signal_count > 3){
 			/* SIGINT에 대해 old_act(예전 행동)로 설정 */
-			sigaction(SIGUSR1 &old_act, NULL);
+			sigaction(SIGUSR1, &old_act, NULL);
 		}
 	}
 }
