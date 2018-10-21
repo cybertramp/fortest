@@ -8,7 +8,7 @@ int main(void){
 	char buf[30];
 
 	/* create pipe */
-	if(pipe(pfd) == -1){
+	if(pipe(pfd) == -1){	// -1 이면 만들어지지 않음
 		perror("pipe error");
 		exit(1);
 	}
