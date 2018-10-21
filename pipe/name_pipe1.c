@@ -1,7 +1,9 @@
 /* 
-[Named Pipe]
-표준 입 출력 대신 파일을 통해 구현 
-*/
+
+   [Named Pipe]
+   표준 입 출력 대신 파일을 통해 구현 
+
+ */
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -25,7 +27,7 @@ int main(void){
 	/* FIFO 를 통해 데이터 전송 받을 상대 측 프로세스를 기다림 */
 	/* 상대 측 프로세스가 FIFO 파일 지시자를 열면, 우리도 연다.*/
 	printf("Writer: waiting for a reader.\n");
-	fd = open(FIFO_NAME, O_WRONLY);
+	fd = open(FIFO_NAME, O_WRONLY);		// O_WRONLY => 쓰기전용
 	
 	printf("Writer: the reader ready.\n");
 	printf("Writer: your input: ");
@@ -36,6 +38,7 @@ int main(void){
 			perror("wirte error");
 		else
 			printf("Writer: wrote %d bytes\n",num);
-		return 0;
 	}
+	return 0;
+	
 }

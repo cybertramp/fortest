@@ -2,10 +2,16 @@
 #include<stdlib.h>
 #include<unistd.h>
 
-/* 표준 입력(stdin) = 0 */
-/* 표준 출력(stdout) = 1 */
-/* 표준 에러(stderr) = 2 */
+/* 
+   표준 입력(stdin) = 0 
+   표준 출력(stdout) = 1
+   표준 에러(stderr) = 2
 
+   write ---> read
+   pfd[1]     pfd[0]
+   ls | wc -l
+
+ */
 int main(void){
 	int pfd[2];
 
