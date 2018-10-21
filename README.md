@@ -1,6 +1,7 @@
 # fortest
 this rep for test
 
+```
 # git사용시 참고
 # 2017/10/18 생성
 
@@ -43,5 +44,5 @@ git config -l
 
 # git 상태확인
 git status
-
+```
 
