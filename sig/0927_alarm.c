@@ -1,3 +1,4 @@
+/* SIG Alaram을 부른 프로세스에게 보내짐 */
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
